@@ -1,0 +1,24 @@
+<launch>
+
+    <arg name="namespace" default="/"/> 
+       
+    
+    <node pkg="xbot_msgs" type="xbot_sensor_msgs_bridge" 
+                                    name="xbot_sensor_msgs_bridge" 
+                                    required="false" 
+                                    output="screen">
+                                    
+    </node>
+
+    <node pkg="joint_state_publisher" type="joint_state_publisher" 
+                                    name="joint_state_publisher" 
+                                    ns="xbotcore"
+                                    required="false" 
+                                    output="screen">
+                                    
+        <param name="use_gui" value="true"/>
+        <remap from="joint_states" to="ros_command"/>
+                                    
+    </node>
+
+</launch>
