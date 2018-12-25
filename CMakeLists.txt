@@ -168,6 +168,8 @@ install(TARGETS xbot_sensor_msgs_bridge xbot_sensor_msgs_bridge
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+install(PROGRAMS src/joint_state_publisher DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
 ## Mark cpp header files for installation
 # install(DIRECTORY include/${PROJECT_NAME}/
 #   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}

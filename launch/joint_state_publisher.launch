@@ -12,7 +12,7 @@
                                         
         </node>
 
-        <node pkg="joint_state_publisher" type="joint_state_publisher" 
+        <node pkg="xbot_msgs" type="joint_state_publisher" 
                                         name="joint_state_publisher" 
                                         ns="xbotcore"
                                         required="false" 
@@ -20,7 +20,8 @@
                                 
             <param name="rate" value="$(arg rate)"/>
             <param name="use_gui" value="true"/>
-            <remap from="joint_states" to="ros_command"/>
+            <remap from="command" to="ros_command"/>
+            <remap from="joint_states" to="ros_joint_states"/>
                                         
     </node>
     
