@@ -54,6 +54,7 @@ add_message_files(
   JointCommand.msg
   PingPong.msg
   Statistics.msg
+  AuxState.msg
 )
 
 # Generate services in the 'srv' folder
