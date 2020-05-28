@@ -55,6 +55,8 @@ add_message_files(
   PingPong.msg
   Statistics.msg
   AuxState.msg
+  TaskStatistics.msg
+  ThreadStatistics.msg
 )
 
 # Generate services in the 'srv' folder
@@ -62,6 +64,8 @@ add_service_files(
   FILES
   PluginCommand.srv
   PluginStatus.srv
+  GetPluginList.srv
+  SetControlMask.srv
 )
 
 ## Generate actions in the 'action' folder
@@ -75,6 +79,7 @@ add_service_files(
 generate_messages(
   DEPENDENCIES
   std_msgs
+  xbot_msgs
 )
 
 ################################################
