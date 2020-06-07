@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 2.8.3)
-project(xbot_msgs)
+cmake_minimum_required(VERSION 3.0)
+project(xbot_msgs VERSION 2.0.0)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
