@@ -57,6 +57,7 @@ add_message_files(
   AuxState.msg
   TaskStatistics.msg
   ThreadStatistics.msg
+  LifecycleEvent.msg
 )
 
 # Generate services in the 'srv' folder
