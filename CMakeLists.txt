@@ -52,6 +52,7 @@ add_message_files(
   FILES
   JointState.msg
   JointCommand.msg
+  JointDeviceInfo.msg
   PingPong.msg
   Statistics.msg
   AuxState.msg
