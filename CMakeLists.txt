@@ -60,6 +60,7 @@ add_message_files(
   TaskStatistics.msg
   ThreadStatistics.msg
   LifecycleEvent.msg
+  Fault.msg
 )
 
 # Generate services in the 'srv' folder
