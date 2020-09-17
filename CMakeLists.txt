@@ -70,6 +70,7 @@ add_service_files(
   PluginStatus.srv
   GetPluginList.srv
   SetControlMask.srv
+  SetAuxFields.srv
 )
 
 ## Generate actions in the 'action' folder

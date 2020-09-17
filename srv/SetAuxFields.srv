@@ -1,0 +1,4 @@
+string[] aux_types
+---
+string message
+bool success
