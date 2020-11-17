@@ -55,6 +55,7 @@ add_message_files(
   JointCommand.msg
   JointDeviceInfo.msg
   PingPong.msg
+  Statistics2.msg
   Statistics.msg
   AuxState.msg
   TaskStatistics.msg
