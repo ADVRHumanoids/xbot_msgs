@@ -72,6 +72,8 @@ add_service_files(
   GetPluginList.srv
   SetControlMask.srv
   SetAuxFields.srv
+  StartProcess.srv
+  StopProcess.srv
 )
 
 ## Generate actions in the 'action' folder

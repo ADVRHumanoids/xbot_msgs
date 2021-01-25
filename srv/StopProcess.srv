@@ -1,0 +1,5 @@
+uint8 signum
+---
+uint8 exit_code
+string message
+bool success
