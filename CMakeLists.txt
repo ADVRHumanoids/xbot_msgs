@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 2.8.3)
-project(xbot_msgs)
+cmake_minimum_required(VERSION 3.0)
+project(xbot_msgs VERSION 2.0.0)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -51,9 +51,17 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   JointState.msg
+  CustomState.msg
   JointCommand.msg
+  JointDeviceInfo.msg
   PingPong.msg
+  Statistics2.msg
   Statistics.msg
+  AuxState.msg
+  TaskStatistics.msg
+  ThreadStatistics.msg
+  LifecycleEvent.msg
+  Fault.msg
 )
 
 # Generate services in the 'srv' folder
@@ -61,6 +69,11 @@ add_service_files(
   FILES
   PluginCommand.srv
   PluginStatus.srv
+  GetPluginList.srv
+  SetControlMask.srv
+  SetAuxFields.srv
+  StartProcess.srv
+  StopProcess.srv
 )
 
 ## Generate actions in the 'action' folder
@@ -74,6 +87,7 @@ add_service_files(
 generate_messages(
   DEPENDENCIES
   std_msgs
+  xbot_msgs
 )
 
 ################################################
@@ -195,3 +209,6 @@ install(DIRECTORY launch/
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
+include(GenerateDeb)
