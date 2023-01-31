@@ -74,6 +74,8 @@ add_service_files(
   SetAuxFields.srv
   StartProcess.srv
   StopProcess.srv
+  GetStringList.srv
+  SetString.srv
 )
 
 ## Generate actions in the 'action' folder
