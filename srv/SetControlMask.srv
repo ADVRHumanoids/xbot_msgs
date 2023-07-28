@@ -1,11 +1,11 @@
-uint8 Position=1
-uint8 Velocity=2
-uint8 Effort=4
-uint8 Stiffness=8
-uint8 Damping=16
+uint8 POSITION=1
+uint8 VELOCITY=2
+uint8 EFFORT=4
+uint8 STIFFNESS=8
+uint8 DAMPING=16
 
-uint8 Impedance=24
-uint8 All=255
+uint8 IMPEDANCE=24
+uint8 ALL=255
 
 uint8 ctrl_mask
 ---

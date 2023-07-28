@@ -2,7 +2,7 @@
 
 int32 seq_id
 string node_name
-std_msgs/Time send_time
-std_msgs/Time ch_rcv_time
-std_msgs/Time rt_rcv_time
-std_msgs/Time ch_resend_time
+builtin_interfaces/Time send_time
+builtin_interfaces/Time ch_rcv_time
+builtin_interfaces/Time rt_rcv_time
+builtin_interfaces/Time ch_resend_time
