@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(xbot_msgs)
+project(xbot_msgs VERSION 1.0.0)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
@@ -49,3 +49,5 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 ament_export_dependencies(rosidl_default_runtime)
 
 ament_package()
+
+include(cmake/GenerateDeb.cmake)
