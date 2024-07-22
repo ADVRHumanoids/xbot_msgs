@@ -30,6 +30,7 @@ set(srv_files
   srv/SetFilterProperties.srv
   srv/PluginStatus.srv
   srv/GetPluginList.srv
+  srv/GetParameterInfo.srv
   srv/SetControlMask.srv
   srv/SetAuxFields.srv
   srv/StartProcess.srv
