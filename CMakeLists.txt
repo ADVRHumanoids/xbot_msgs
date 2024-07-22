@@ -70,6 +70,7 @@ add_service_files(
   PluginCommand.srv
   PluginStatus.srv
   GetPluginList.srv
+  GetParameterInfo.srv
   SetControlMask.srv
   SetAuxFields.srv
   StartProcess.srv
