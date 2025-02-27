@@ -27,6 +27,7 @@ set(msg_files
 # Generate services in the 'srv' folder
 set(srv_files
   srv/PluginCommand.srv
+  srv/SetFilterProperties.srv
   srv/PluginStatus.srv
   srv/GetPluginList.srv
   srv/SetControlMask.srv
