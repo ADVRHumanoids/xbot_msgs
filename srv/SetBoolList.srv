@@ -1,0 +1,5 @@
+string[] name
+bool[] request
+---
+bool success
+string message

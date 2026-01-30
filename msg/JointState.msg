@@ -19,9 +19,6 @@ float32[] effort_reference
 float32[] stiffness
 float32[] damping
 
-# Fault
-uint16[] fault
-
-# Auxiliary field (usually for motor current)
-string aux_name
-float32[] aux
+# Status
+uint8[] motor_status
+uint8[] brake_status

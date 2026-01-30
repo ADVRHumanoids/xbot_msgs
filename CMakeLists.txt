@@ -37,6 +37,7 @@ set(srv_files
   srv/StopProcess.srv
   srv/GetStringList.srv
   srv/SetString.srv
+  srv/SetBoolList.srv
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
