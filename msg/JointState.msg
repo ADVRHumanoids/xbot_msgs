@@ -9,8 +9,9 @@ float32[] motor_position
 float32[] link_velocity
 float32[] motor_velocity
 float32[] effort
-uint16[] temperature_motor
-uint16[] temperature_driver
+float32[] motor_effort
+float32[] temperature_motor
+float32[] temperature_driver
 
 # Desired values
 float32[] position_reference
@@ -19,9 +20,6 @@ float32[] effort_reference
 float32[] stiffness
 float32[] damping
 
-# Fault
-uint16[] fault
-
-# Auxiliary field (usually for motor current)
-string aux_name
-float32[] aux
+# Status
+uint8[] motor_status
+uint8[] brake_status
