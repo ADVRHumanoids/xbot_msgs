@@ -3,6 +3,9 @@ std_msgs/Header header
 # Joint names
 string[] name
 
+# Stamp
+uint64[] stamp
+
 # Sensed data
 float32[] link_position
 float32[] motor_position

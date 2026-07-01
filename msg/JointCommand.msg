@@ -3,6 +3,9 @@ std_msgs/Header header
 # Joint names
 string[] name
 
+# Stamp feedback
+uint64 stamp_rx_feedback
+
 # Desired values
 float32[] position
 float32[] velocity
