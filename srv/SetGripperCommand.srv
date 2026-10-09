@@ -1,0 +1,10 @@
+int16 CMD_GRIP=0
+int16 CMD_MOVE=1
+
+int16 cmd 
+float64 target_position
+float64 target_velocity
+float64 target_force
+---
+bool success
+string message

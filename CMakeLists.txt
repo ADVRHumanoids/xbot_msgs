@@ -22,6 +22,7 @@ set(msg_files
   msg/ThreadStatistics.msg
   msg/LifecycleEvent.msg
   msg/Fault.msg
+  msg/GripperState.msg
 )
 
 # Generate services in the 'srv' folder
@@ -38,6 +39,7 @@ set(srv_files
   srv/GetStringList.srv
   srv/SetString.srv
   srv/SetBoolList.srv
+  srv/SetGripperCommand.srv
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
